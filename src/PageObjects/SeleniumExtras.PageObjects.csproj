@@ -10,9 +10,9 @@
         PackageReference below when Selenium ships a new minor/major).
       - patch is ours: bump it for fork-only fixes that don't correspond to a Selenium bump.
     -->
-    <AssemblyVersion>4.48.0.0</AssemblyVersion>
-    <FileVersion>4.48.0.0</FileVersion>
-    <Version>4.48.0</Version>
+    <AssemblyVersion>4.48.1.0</AssemblyVersion>
+    <FileVersion>4.48.1.0</FileVersion>
+    <Version>4.48.1</Version>
     <PackageId>DotNetSeleniumWebDriverExtras.PageObjects</PackageId>
     <Description>This package provides an implementation of the PageFactory for .NET, replacing the implementation originally provided by the Selenium project. Fork of DotNetSeleniumExtras.PageObjects rebuilt against Selenium.WebDriver 4.x.</Description>
     <Copyright>Copyright 2018, Software Freedom Conservancy</Copyright>
@@ -22,10 +22,15 @@
     <RepositoryUrl>https://github.com/jancit/DotNetSeleniumWebDriverExtras</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>selenium;webdriver;pageobjects;pagefactory</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Selenium.WebDriver" Version="4.48.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
