@@ -5,11 +5,23 @@
     <AssemblyName>SeleniumExtras.WaitHelpers</AssemblyName>
     <RootNamespace>SeleniumExtras</RootNamespace>
     <PackageId>DotNetSeleniumWebDriverExtras.WaitHelpers</PackageId>
+    <!--
+      Versioning scheme: <selenium-major>.<selenium-minor>.<fork-patch>
+      - major.minor tracks the Selenium.WebDriver line this build targets (bump alongside the
+        PackageReference below when Selenium ships a new minor/major).
+      - patch is ours: bump it for fork-only fixes that don't correspond to a Selenium bump.
+    -->
     <AssemblyVersion>4.48.0.0</AssemblyVersion>
     <FileVersion>4.48.0.0</FileVersion>
     <Version>4.48.0</Version>
     <Description>This package provides an implementation of the ExpectedConditions class for use with WebDriverWait in .NET, replacing the implementation originally provided by the Selenium project. Fork of DotNetSeleniumExtras.WaitHelpers rebuilt against Selenium.WebDriver 4.x.</Description>
     <Copyright>Copyright 2018, Software Freedom Conservancy</Copyright>
+    <Authors>jancit</Authors>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/jancit/DotNetSeleniumWebDriverExtras</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jancit/DotNetSeleniumWebDriverExtras</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>selenium;webdriver;waithelpers;expectedconditions</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
